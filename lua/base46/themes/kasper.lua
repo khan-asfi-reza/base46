@@ -5,10 +5,10 @@ local M = {}
 
 M.base_30 = {
   white = "#abb2bf",
-  darker_black = "#191222",
-  black = "#1e222a", --  nvim bg
+  darker_black = "#191922",
+  black = "#11121D", --  nvim bg
   black2 = "#252931",
-  one_bg = "#282c34", -- real bg of onedark
+  one_bg = "#282c34",
   one_bg2 = "#353b45",
   one_bg3 = "#373b43",
   grey = "#42464e",
@@ -34,39 +34,75 @@ M.base_30 = {
   lightbg = "#2d3139",
   pmenu_bg = "#61afef",
   folder_bg = "#61afef",
+  light_pink = "#e3a1a6"
 }
 
 M.base_16 = {
-  base00 = "#1e222a",
-  base01 = "#353b45",
-  base02 = "#3e4451",
-  base03 = "#545862",
-  base04 = "#565c64",
-  base05 = "#d98289",
-  base06 = "#b6bdca",
-  base07 = "#c8ccd4",
-  base08 = "#e06c75",
-  base09 = "#d19a66",
-  base0A = "#e5c07b",
-  base0B = "#98c379",
-  base0C = "#56b6c2",
-  base0D = "#61afef",
-  base0E = "#c678dd",
-  base0F = "#be5046",
+  base00 = "#11121d",
+  base01 = "#1b1c27",
+  base02 = "#21222d",
+  base03 = "#282934",
+  base04 = "#30313c",
+  base05 = "#abb2bf",
+  base06 = "#b2b9c6",
+  base07 = "#A0A8CD",
+  base08 = "#ee6d85",
+  base09 = "#7199ee",
+  base0A = "#7199ee",
+  base0B = "#dfae67",
+  base0C = "#a485dd",
+  base0D = "#95c561",
+  base0E = "#a485dd",
+  base0F = "#f3627a",
 }
 
 M.type = "dark"
 
-M = require("base46").override_theme(M, "onedragon")
 
-M.polish_h1 = {
+M.polish_hl = {
   ["@python.self"] = {
     fg = M.base_30.sun
   },
-  ["python.cls"] = {
+  ["@python.cls"] = {
     fg = M.base_30.sun
-  }
+  },
+  ["@tag.delimiter"] = { 
+    fg = M.base_30.cyan
+  },
+  ["@function"] = { 
+    fg = M.base_30.red
+  },
+  ["@parameter"] = { 
+    fg = M.base_16.base0B 
+  },
+  ["@constructor"] = { 
+    fg = M.base_16.base0A 
+  },
+  ["@tag.attribute"] = { 
+    fg = M.base_30.orange
+  },
+  ["@variable"] = { 
+    fg = M.base_30.baby_pink
+  },
+  ["@property"] = { 
+    fg = M.base_30.orange
+  },
+  ["@variable.builtin"] = { 
+    fg = M.base_30.red 
+  },
+  ["@punctuation.bracket"] = { 
+    fg = M.base_16.base0B 
+  },
+  Variable = {
+    fg = M.base_30.baby_pink
+  },
+  Operator = {
+    fg = M.base_30.purple
+  },
+  
 }
+
+M = require("base46").override_theme(M, "kasper")
 
 return M
 

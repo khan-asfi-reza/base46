@@ -34,7 +34,6 @@ M.base_30 = {
   lightbg = "#2d3139",
   pmenu_bg = "#61afef",
   folder_bg = "#61afef",
-  light_pink = "#e3a1a6"
 }
 
 M.base_16 = {
@@ -59,42 +58,6 @@ M.base_16 = {
 
 M.type = "dark"
 
-
-M.polish_hl = {
-  ["@tag.delimiter"] = {
-    fg = M.base_30.cyan
-  },
-  ["@function"] = {
-    fg = M.base_30.red
-  },
-  ["@parameter"] = {
-    fg = M.base_16.base0B 
-  },
-  ["@constructor"] = {
-    fg = M.base_16.base0A
-  },
-  ["@tag.attribute"] = {
-    fg = M.base_30.orange
-  },
-  ["@variable"] = {
-    fg = M.base_30.baby_pink
-  },
-  ["@property"] = {
-    fg = M.base_30.orange
-  },
-  ["@variable.builtin"] = {
-    fg = M.base_30.red
-  },
-  ["@punctuation.bracket"] = {
-    fg = M.base_16.base0B
-  },
-  Variable = {
-    fg = M.base_30.baby_pink
-  },
-  Operator = {
-    fg = M.base_30.purple
-  }
-}
 
 M = require("base46").override_theme(M, "kasper")
 

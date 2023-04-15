@@ -38,23 +38,24 @@ M.base_30 = {
 }
 
 M.base_16 = {
-  base00 = "#11121d",
-  base01 = "#1b1c27",
-  base02 = "#21222d",
-  base03 = "#282934",
-  base04 = "#30313c",
+  base00 = "#1e222a",
+  base01 = "#353b45",
+  base02 = "#3e4451",
+  base03 = "#545862",
+  base04 = "#565c64",
   base05 = "#abb2bf",
-  base06 = "#b2b9c6",
-  base07 = "#A0A8CD",
-  base08 = "#ee6d85",
-  base09 = "#7199ee",
-  base0A = "#7199ee",
-  base0B = "#dfae67",
-  base0C = "#a485dd",
-  base0D = "#95c561",
-  base0E = "#a485dd",
-  base0F = "#f3627a",
+  base06 = "#b6bdca",
+  base07 = "#c8ccd4",
+  base08 = "#e06c75",
+  base09 = "#d19a66",
+  base0A = "#e5c07b",
+  base0B = "#98c379",
+  base0C = "#56b6c2",
+  base0D = "#61afef",
+  base0E = "#c678dd",
+  base0F = "#be5046",
 }
+
 
 M.type = "dark"
 
@@ -66,32 +67,32 @@ M.polish_hl = {
   ["@python.cls"] = {
     fg = M.base_30.sun
   },
-  ["@tag.delimiter"] = { 
+  ["@tag.delimiter"] = {
     fg = M.base_30.cyan
   },
-  ["@function"] = { 
+  ["@function"] = {
     fg = M.base_30.red
   },
-  ["@parameter"] = { 
+  ["@parameter"] = {
     fg = M.base_16.base0B 
   },
-  ["@constructor"] = { 
-    fg = M.base_16.base0A 
+  ["@constructor"] = {
+    fg = M.base_16.base0A
   },
-  ["@tag.attribute"] = { 
+  ["@tag.attribute"] = {
     fg = M.base_30.orange
   },
-  ["@variable"] = { 
+  ["@variable"] = {
     fg = M.base_30.baby_pink
   },
-  ["@property"] = { 
+  ["@property"] = {
     fg = M.base_30.orange
   },
-  ["@variable.builtin"] = { 
-    fg = M.base_30.red 
+  ["@variable.builtin"] = {
+    fg = M.base_30.red
   },
-  ["@punctuation.bracket"] = { 
-    fg = M.base_16.base0B 
+  ["@punctuation.bracket"] = {
+    fg = M.base_16.base0B
   },
   Variable = {
     fg = M.base_30.baby_pink

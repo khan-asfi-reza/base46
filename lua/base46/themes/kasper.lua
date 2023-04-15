@@ -61,12 +61,6 @@ M.type = "dark"
 
 
 M.polish_hl = {
-  ["@python.self"] = {
-    fg = M.base_30.sun
-  },
-  ["@python.cls"] = {
-    fg = M.base_30.sun
-  },
   ["@tag.delimiter"] = {
     fg = M.base_30.cyan
   },
@@ -99,8 +93,7 @@ M.polish_hl = {
   },
   Operator = {
     fg = M.base_30.purple
-  },
-  
+  }
 }
 
 M = require("base46").override_theme(M, "kasper")
